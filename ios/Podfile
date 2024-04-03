@@ -28,6 +28,13 @@ end
 target 'chatapp' do
   config = use_native_modules!
 
+pod 'FirebaseCoreInternal', :modular_headers => true
+pod 'GoogleUtilities', :modular_headers => true
+pod 'FirebaseCore', :modular_headers => true
+pod 'FirebaseFirestore', :modular_headers => true
+pod 'FirebaseCoreExtension', :modular_headers => true
+pod 'FirebaseFirestoreInternal', :modular_headers => true
+
   use_react_native!(
     :path => config[:reactNativePath],
     # Enables Flipper.
